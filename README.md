@@ -1,5 +1,12 @@
 SportsDevil-Fixes
 =================
+custom module
+
+	Windows
+	%AppData%\XBMC\userdata\addon_data\plugin.video.SportsDevil\custom
+	
+	Android
+	android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\c​ustom
 
 
 livesports
@@ -40,10 +47,4 @@ modules
 
 
 
-custom module
 
-	Windows
-	%AppData%\XBMC\userdata\addon_data\plugin.video.SportsDevil\custom
-	
-	Android
-	android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\c​ustom
