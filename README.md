@@ -10,8 +10,11 @@ https://github.com/al101/SportsDevil-Fixes/archive/master.zip
 
 Get these 2 files for any required website.
 
+
 WebsiteName.cfg
+
 WebsiteName.module
+
 
 
 place them here
@@ -23,7 +26,7 @@ place them here
 	Android
 	android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\custom
 
-for other OS' 
+for other OS'
 http://wiki.xbmc.org/index.php?title=Userdata
 now find SportsDevil\custom folder.
 
