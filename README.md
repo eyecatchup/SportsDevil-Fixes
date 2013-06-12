@@ -1,50 +1,29 @@
 SportsDevil-Fixes
 =================
-custom module
+How To Install
+
+
+WebSiteName.cfg
+WebSiteName.module
+
+from here (you have to unzip it can't install as an addon)
+
+https://github.com/al101/SportsDevil-Fixes/archive/master.zip
+
+place them here
+
 
 	Windows
 	%AppData%\XBMC\userdata\addon_data\plugin.video.SportsDevil\custom
 	
 	Android
-	android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\c​ustom
+	android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\custom
 
+for other OS' 
+http://wiki.xbmc.org/index.php?title=Userdata
+now find SportsDevil\custom folder.
 
-livesports
-
-	Windows
-	%AppData%\XBMC\addons\plugin.video.SportsDevil\resources\modules\livesports
-
-	Apple TV 2
-	/private/var/mobile/Library/Preferences/XBMC/addons/plugin.video.SportsDevil/resources/modules/livesports
-
-	Android
-	/sdcard/Android/data/org.xbmc.xbmc/files/.xbmc/addons/plugin.video.SportsDevil/resources/modules/livesports
-
-
-tv
-	
-	Windows
-	%AppData%\XBMC\addons\plugin.video.SportsDevil\resources\modules\tv
-
-	Apple TV 2
-	/private/var/mobile/Library/Preferences/XBMC/addons/plugin.video.SportsDevil/resources/modules/tv
-
-	Android
-	/sdcard/Android/data/org.xbmc.xbmc/files/.xbmc/addons/plugin.video.SportsDevil/resources/modules/tv
-
-
-
-modules
-
-	Windows
-	%AppData%\XBMC\addons\plugin.video.SportsDevil\resources\modules
-
-	Apple TV 2
-	/private/var/mobile/Library/Preferences/XBMC/addons/plugin.video.SportsDevil/resources/modules
-
-	Android
-	/sdcard/Android/data/org.xbmc.xbmc/files/.xbmc/addons/plugin.video.SportsDevil/resources/modules
-
+You will find this site under Custom Modules in SportsDevil main menu.
 
 
 
