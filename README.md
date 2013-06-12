@@ -30,4 +30,4 @@ for other OS'
 http://wiki.xbmc.org/index.php?title=Userdata
 now find SportsDevil\custom folder.
 
-You will find this site under Custom Modules in SportsDevil main men
+You will find this site under Custom Modules in SportsDevil main menu.
