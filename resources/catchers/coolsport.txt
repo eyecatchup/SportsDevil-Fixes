@@ -22,5 +22,5 @@ item_info_convert=getInfo('%s','.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*?['"]str
 item_info_build=%s
 
 item_info_name=url
-item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' live=1 token=$1a62a343-e55c-4394-a88c-877415cff719C timeout=14 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' live=1 token=$Iwillkill%$wyou@#q5 timeout=14 swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s
