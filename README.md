@@ -1,5 +1,5 @@
-						### SportsDevil-Fixes ###
-
+### SportsDevil-Fixes ###
+    =================
 
 
 Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
