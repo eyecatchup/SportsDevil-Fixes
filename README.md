@@ -2,7 +2,7 @@
 					=================
 
 
-Modules and Catchers for the xbmc SportsDevil addon
+Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
 
 
 
@@ -53,7 +53,6 @@ WebsiteName.cfg
 WebsiteName.module
 
 
-
 place them here
 
 
@@ -63,7 +62,9 @@ place them here
 #### Android ####
 android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\custom
 
+
 for other OS'http://wiki.xbmc.org/index.php?title=Userdata now find SportsDevil\custom folder.
+
 
 You will find this site under Custom Modules in SportsDevil main menu.
 
