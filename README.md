@@ -1,5 +1,5 @@
-					SportsDevil-Fixes
-					=================
+						### SportsDevil-Fixes ###
+						     =================
 
 
 Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
@@ -63,7 +63,9 @@ place them here
 android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\custom
 
 
+
 for other OS'http://wiki.xbmc.org/index.php?title=Userdata now find SportsDevil\custom folder.
+
 
 
 You will find this site under Custom Modules in SportsDevil main menu.
