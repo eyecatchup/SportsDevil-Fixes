@@ -8,6 +8,9 @@ Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
 ### Manual Download ###
 
 1. Download the zip file under: https://github.com/al101/SportsDevil-Fixes/archive/master.zip
+   For OpenELEC users:https://github.com/al101/SportsDevil-Fixes/archive/master.tar.gz also an auto 
+   update script here. http://forum.xbmc.org/showthread.php?tid=100031&pid=1480602#pid1480602 
+   from MilhouseVH.
 
 2. Extract the zip file
 
@@ -36,7 +39,7 @@ Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
 
 -------------------------------------------------------
 
-Custom Modules
+#### Custom Modules ####
 	
 
 Download zip file (you have to unzip it can't install as an addon)
