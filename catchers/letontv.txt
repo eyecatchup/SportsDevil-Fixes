@@ -1,0 +1,20 @@
+item_info_name=title
+item_info_from=@PARAM1@
+item_info_build=LetOnTV - %s
+
+item_info_name=pageUrl
+item_info_from=@PARAM1@
+item_info_build=http://leton.tv/player.php?streampage=%s&width=640&height=490
+
+item_info_name=tmp
+item_info_from=pageUrl
+item_info_convert=getInfo('%s','.*var v_part =\s*'([^?]+).*keys=([^&]+).*keyt=([^']+).*','@REFERER@','id|keys|keyt')
+item_info_build=%s
+
+item_info_name=url
+item_info_from=http://publish.leton.tv' + id + '?&keyt=' + keyt + 'keys=' + keys + '
+item_info_build=%s
+
+item_info_name=type
+item_info_build=video
+item_url_build=%s
