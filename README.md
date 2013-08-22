@@ -42,35 +42,31 @@ Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
 #### Custom Modules ####
 	
 
-Download zip file (you have to unzip it can't install as an addon)
+1. As above
 
-https://github.com/al101/SportsDevil-Fixes/archive/master.zip
+2. Move the files (2 files for any required module .cfg and .module)to the directory .
 
-
-Get these 2 files for any required module/website.
-
-
-WebsiteName.cfg
-
-WebsiteName.module
-
-
-place them here
 
 
 #### Windows ####
-%AppData%\XBMC\userdata\addon_data\plugin.video.SportsDevil\custom
+
+* %AppData%\XBMC\userdata\addon_data\plugin.video.SportsDevil\custom
+
+#### Apple TV ####
+
+* /private/var/mobile/Library/Preferences/XBMC/userdata/addon_data/plugin.video.SportsDevil/custom
 	
 #### Android ####
-android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\custom
+
+* android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\custom
+
+
+Location of the userdata folder on other Operating Systems
+http://wiki.xbmc.org/index.php?title=Userdata
 
 
 
-for other OS'http://wiki.xbmc.org/index.php?title=Userdata now find SportsDevil\custom folder.
-
-
-
-You will find this site under Custom Modules in SportsDevil main menu.
+Custom Modules can be found on SportsDevil main menu.
 
 -------------------------------------------------
 Source
