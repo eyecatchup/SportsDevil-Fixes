@@ -62,7 +62,7 @@ Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
 
 
 
-Location of the userdata folder on other Operating Systems
+Location of the userdata folder on other Operating Systems:
 http://wiki.xbmc.org/index.php?title=Userdata
 
 
