@@ -44,7 +44,7 @@ Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
 
 1. As above
 
-2. Move the files (2 files for any required module .cfg and .module)to the directory .
+2. Move the files (2 files for any required module .cfg and .module) to the directory.
 
 
 
@@ -59,6 +59,7 @@ Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
 #### Android ####
 
 * android\data\org.xbmc.xbmc\files\.xbmc\userdata\addons\plugin.video.SportDevil\custom
+
 
 
 Location of the userdata folder on other Operating Systems
