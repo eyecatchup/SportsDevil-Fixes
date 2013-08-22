@@ -8,7 +8,7 @@ item_info_build=http://sportsembed.com/embed.php?v=%s&vw=600&vh=450&typeplayer=0
 
 item_info_name=swf
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?data[=:,]\s*['"]([^'"]+)['"].*','@REFERER@')
+item_info_convert=getInfo('%s','.*?SWFObject\(['"]([^'"]+)['"].*','@REFERER@')
 item_info_build=%s
 
 item_info_name=rtmp
