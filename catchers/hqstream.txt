@@ -32,5 +32,5 @@ item_info_convert=divide(%s, @f@)
 item_info_build=%s
 
 item_info_name=url
-item_info_from=http://' + ip1 + '.' + ip2 + '.' + ip3 + '.' + ip4 + ':80' + v
+item_info_from=rtmp://' + ip1 + '.' + ip2 + '.' + ip3 + '.' + ip4 + v + ' swfUrl=http://filo.hqstream.tv/jwp6/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://www.stopstream.tv
 item_info_build=%s
