@@ -45,5 +45,5 @@ item_info_build=%s
 
 
 item_info_name=url
-item_info_from=rtmp + ' playpath=' + fid + ' swfUrl=' + pid + ' conn=S:' + file + ' conn=S:' + ts + ' conn=S:' + sg + ' conn=S:V&gt;JWhui^@2ESdu0?}&gt;AN live=1 timeout=15 token=Q!lrB@G1)ww(-dQ4J4 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + pid + ' conn=S:' + file + ' conn=S:' + ts + ' conn=S:' + sg + ' conn=S:V&gt;JWhui^@2ESdu0?}&gt;AN live=1 timeout=15 token=Q!lrB@G1)ww(-dQ4J4 swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s
