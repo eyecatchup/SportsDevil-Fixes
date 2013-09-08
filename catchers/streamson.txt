@@ -1,7 +1,7 @@
 item_info_name=tmpp
 item_info_from=@PARAM1@
-item_info_convert=getInfo('%s','.*?frameborder="0" src="([^'"]+).*','@REFERER@')
-item_info_convert=getInfo('%s','.*?window.location = "([^'"]+).*','@REFERER@')
+item_info_convert=getInfo('%s','.*?frameborder="0" src="([^'"]+).*','http://streamson.me')
+item_info_convert=getInfo('%s','.*?window.location = "([^'"]+).*','http://streamson.me')
 item_info_build=%s
 
 item_info_name=fid
@@ -12,7 +12,7 @@ item_info_build=%s
 
 item_info_name=js
 item_info_from=tmpp
-item_info_convert=getInfo('%s','.*?data-rocketsrc="(http://www.castto.me[^"']+).*','http://streamson.me')
+item_info_convert=getInfo('%s','.*?src="(http://www.castto.me[^"']+).*','http://streamson.me')
 item_info_convert=debug
 item_info_build=%s
 
