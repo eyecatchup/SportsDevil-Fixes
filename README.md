@@ -7,12 +7,14 @@ Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
 
 ### Manual Download ###
 
-1. Download the zip file under: https://github.com/al101/SportsDevil-Fixes/archive/master.zip    
+1. Download the zip file under: https://github.com/al101/SportsDevil-Fixes/archive/master.zip 
+
    For OpenELEC users:https://github.com/al101/SportsDevil-Fixes/archive/master.tar.gz also an auto 
    update script here (http://forum.xbmc.org/showthread.php?tid=100031&pid=1480602#pid1480602) 
    from MilhouseVH.
    
    Video tutorial for iOS devices (Apple TV, iPad etc), thanks to Shaz786.
+   
    Video tutorial for Android devices, thanks to CrazyH2008.
 
 
