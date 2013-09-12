@@ -14,8 +14,10 @@ Modules, Catchers and Custom Modules for the xbmc SportsDevil addon
    from MilhouseVH.
    
    Video tutorial for iOS devices (Apple TV, iPad etc), thanks to Shaz786.
+   http://www.youtube.com/watch?v=99J6HnsaUAw
    
    Video tutorial for Android devices, thanks to CrazyH2008.
+   https://www.youtube.com/watch?v=3jnlzmZy-lI
 
 
 2. Extract the zip file
