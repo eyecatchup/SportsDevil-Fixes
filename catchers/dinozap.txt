@@ -25,6 +25,7 @@ item_info_convert=decodeBase64
 item_info_convert=debug
 item_info_build=%s
 
+
 item_info_name=url
-item_info_from=rtmp + ' playpath='+ file + ' swfUrl=' + swf + ' live=true app=vod token=#ro%g0#r@1 buffer=30000 timeout=15 pageUrl=http://www.dinozap.tv 
+item_info_from=rtmp + ' playpath='+ file + ' swfUrl=' + swf + ' live=true flashver=WIN%252011,8,800,168 token=#ro%g0#r@1 timeout=15 pageUrl=http://www.dinozap.tv 
 item_info_build=%s
