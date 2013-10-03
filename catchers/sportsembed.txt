@@ -27,5 +27,5 @@ item_info_convert=getInfo('http://www.sportsembed.com/player_config.php?video=%s
 item_info_build=%s
 
 item_info_name=url
-item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' token=' + token + ' live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' token=%X886(nPK@#. live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s
