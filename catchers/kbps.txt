@@ -8,7 +8,7 @@ item_info_build=http://www.kbps.tv/embed.php?s=%s&width=600&height=450&domain=po
 
 item_info_name=tmp
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*file:\s*"([^'"]+).*','@REFERER@')
+item_info_convert=getInfo('%s','.*?file:\s*["']([^'"]+).*','@REFERER@')
 item_info_build=%s
 
 item_info_name=url
