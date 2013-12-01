@@ -5,7 +5,7 @@ item_info_build=Cast3D - %s
 
 item_info_name=url
 item_info_from=@PARAM1@
-item_info_build=rtmp://www.digiclic-streaming.com/live/%s swfUrl=http://www.cast3d.biz/player.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.cast3d.tv
+item_info_build=rtmp://stream.cast3d.tv:1935/redirect/%s swfUrl=http://www.adslijit.com/cast3dskin.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.cast3d.tv
 
 
 

@@ -1,10 +1,10 @@
 item_info_name=title
 item_info_from=@PARAM1@
-item_info_build=Up4Free - %s
+item_info_build=SoccerJumboTV - %s
 
 item_info_name=tmp
 item_info_from=@PARAM1@
-item_info_convert=getInfo('http://up4free.com/streamn.php?id=%s&width=640&height=460','.*?id='([^'"]+)'.*','@REFERER@')
+item_info_convert=getInfo('http://up4free.com/streamn.php?id=000%s&width=640&height=460','.*?id='([^'"]+)'.*','@REFERER@')
 item_info_build=%s
 
 item_info_name=pageUrl

@@ -204,6 +204,7 @@ class Parser(object):
                     common.log('    -> ' + str(count) + ' item(s) found')
 
                 # find rtmp stream
+                #common.log('Find rtmp stream')
                 if count == 0:
                     item = self.__findRTMP(data, startUrl, lItem)
                     if item:
@@ -212,6 +213,7 @@ class Parser(object):
                         count = 1
 
                 # find embedding javascripts
+                #common.log('Find embedding javascripts')
                 if count == 0:
                     item = findJS(data)
                     if item:
@@ -234,6 +236,7 @@ class Parser(object):
                                 count = 1
 
                 # find vcods
+                #common.log('find vcods')
                 if count == 0:
                     vcods = findVCods(data)
                     if vcods:
@@ -262,6 +265,7 @@ class Parser(object):
                         
                         
                 # find redirects
+                #common.log('find redirects')
                 if count == 0:
                     red = self.__findRedirect(startUrl, inputList.curr_url)
                     if startUrl == red:
@@ -376,6 +380,8 @@ class Parser(object):
                         rule_tmp.skill = value
                     elif key == 'item_curr':
                         rule_tmp.curr = value
+                    elif key == 'item_precheck':
+                        rule_tmp.precheck = value
 
                     elif key.startswith('item_info'):
                         tmpkey = key[len('item_info'):]
@@ -449,83 +455,88 @@ class Parser(object):
 
     def __parseHtml(self, url, data, rules, skills, definedIn, lItem):          
 
+        #common.log('_parseHtml called')
         items = []
 
         for item_rule in rules:
-            revid = re.compile(item_rule.infos, re.IGNORECASE + re.DOTALL + re.MULTILINE)
-            for reinfos in revid.findall(data):
-                tmp = CListItem()
-                
-                if lItem['referer']:
-                    tmp['referer'] = lItem['referer']
-                    
-                if item_rule.order.find('|') != -1:
-                    infos_names = item_rule.order.split('|')
-                    infos_values = list(reinfos)
-                    i = 0
-                    for name in infos_names:
-                        tmp[name] = infos_values[i]
-                        i = i+1
-                else:
-                    tmp[item_rule.order] = reinfos
+            # common.log('rule: ' + item_rule.infos)
+      
+            if not hasattr(item_rule, 'precheck') or (item_rule.precheck in data):
+      
+              revid = re.compile(item_rule.infos, re.IGNORECASE + re.DOTALL + re.MULTILINE)
+              for reinfos in revid.findall(data):
+                  tmp = CListItem()
+                  
+                  if lItem['referer']:
+                      tmp['referer'] = lItem['referer']
+                      
+                  if item_rule.order.find('|') != -1:
+                      infos_names = item_rule.order.split('|')
+                      infos_values = list(reinfos)
+                      i = 0
+                      for name in infos_names:
+                          tmp[name] = infos_values[i]
+                          i = i+1
+                  else:
+                      tmp[item_rule.order] = reinfos
 
-                for info in item_rule.info_list:
-                    info_value = tmp[info.name]
-                    if info_value:
-                        if info.build.find('%s') != -1:
-                            tmpVal = enc.smart_unicode(info.build % enc.smart_unicode(info_value))
-                            tmp[info.name] = tmpVal
-                        continue
+                  for info in item_rule.info_list:
+                      info_value = tmp[info.name]
+                      if info_value:
+                          if info.build.find('%s') != -1:
+                              tmpVal = enc.smart_unicode(info.build % enc.smart_unicode(info_value))
+                              tmp[info.name] = tmpVal
+                          continue
 
-                    if info.build.find('%s') != -1:
-                        if info.src.__contains__('+'):
-                            tmpArr = info.src.split('+')
-                            src = ''
-                            for t in tmpArr:
-                                t = t.strip()
-                                if t.find('\'') != -1:
-                                    src = src + t.strip('\'')
-                                else:
-                                    src = src + enc.smart_unicode(tmp[t])
-                        elif info.src.__contains__('||'):
-                            variables = info.src.split('||')
-                            src = firstNonEmpty(tmp, variables)
-                        else:
-                            src = tmp[info.src]
+                      if info.build.find('%s') != -1:
+                          if info.src.__contains__('+'):
+                              tmpArr = info.src.split('+')
+                              src = ''
+                              for t in tmpArr:
+                                  t = t.strip()
+                                  if t.find('\'') != -1:
+                                      src = src + t.strip('\'')
+                                  else:
+                                      src = src + enc.smart_unicode(tmp[t])
+                          elif info.src.__contains__('||'):
+                              variables = info.src.split('||')
+                              src = firstNonEmpty(tmp, variables)
+                          else:
+                              src = tmp[info.src]
 
-                        if src and info.convert != []:                               
-                            src = self.__parseCommands(tmp, src, info.convert)
-                            if isinstance(src, dict):
-                                for dKey in src:
-                                    tmp[dKey] = src[dKey]
-                                src = src.values()[0]
+                          if src and info.convert != []:                               
+                              src = self.__parseCommands(tmp, src, info.convert)
+                              if isinstance(src, dict):
+                                  for dKey in src:
+                                      tmp[dKey] = src[dKey]
+                                  src = src.values()[0]
 
-                        info_value = info.build % (enc.smart_unicode(src))
-                    else:
-                        info_value = info.build
+                          info_value = info.build % (enc.smart_unicode(src))
+                      else:
+                          info_value = info.build
 
-                    tmp[info.name] = info_value
+                      tmp[info.name] = info_value
 
 
-                tmp['url'] = enc.smart_unicode(item_rule.url_build % (enc.smart_unicode(tmp['url'])))
-                tmp.merge(lItem)
-                if item_rule.skill.find('append') != -1:
-                    tmp['url'] = url + tmp['url']
+                  tmp['url'] = enc.smart_unicode(item_rule.url_build % (enc.smart_unicode(tmp['url'])))
+                  tmp.merge(lItem)
+                  if item_rule.skill.find('append') != -1:
+                      tmp['url'] = url + tmp['url']
 
-                if item_rule.skill.find('space') != -1:
-                    tmp['title'] = ' %s ' % tmp['title'].strip()
+                  if item_rule.skill.find('space') != -1:
+                      tmp['title'] = ' %s ' % tmp['title'].strip()
 
-                if skills.find('videoTitle') > -1:
-                    tmp['videoTitle'] = tmp['title']
+                  if skills.find('videoTitle') > -1:
+                      tmp['videoTitle'] = tmp['title']
 
-                tmp['definedIn'] = definedIn
-                items.append(tmp)
+                  tmp['definedIn'] = definedIn
+                  items.append(tmp)
 
         return items
 
 
     def __parseCommands(self, item, src, convCommands):
-
+        #common.log('_parseCommands called')
         # helping function
         def parseCommand(txt):
             command = {"command": txt, "params": ""}
