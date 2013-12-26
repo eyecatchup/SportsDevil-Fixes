@@ -11,7 +11,7 @@ item_info_from=pageUrl
 item_info_convert=getInfo('%s','.*watch/([^"']+).*','@REFERER@')
 item_info_convert=replace('%s','|iframe','')
 item_info_convert=replace('%s','|','/')
-item_info_convert=getInfo('http://sawlive.tv/embed/watch/%s','.*?SWFObject\('([^']+)'.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@','swf|file|rtmp')
+item_info_convert=getInfo('http://sawlive.tv/embed/watch/%s','.*?SWFObject\('([^']+)'.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','http://128.127.106.253/kc1.html','swf|file|rtmp')
 item_info_build=%s
 
 item_info_name=url
