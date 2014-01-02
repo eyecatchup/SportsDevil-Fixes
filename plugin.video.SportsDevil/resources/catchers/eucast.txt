@@ -6,9 +6,19 @@ item_info_name=pageUrl
 item_info_from=@PARAM1@
 item_info_build=http://www.eucast.tv/embed.php?live=%s
 
-item_info_name=tmp
+item_info_name=swf
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*['"]([^'"]+\.swf)['"].*?file\s*['"=]([^'"&]+).*?streamer\s*['"=]([^'"&]+).*','@REFERER@','swf|file|rtmp')
+item_info_convert=getInfo('%s','.*?SWFObject\(['"]([^'"]+)['"].*','@REFERER@')
+item_info_build=%s
+
+item_info_name=file
+item_info_from=pageUrl
+item_info_convert=getInfo('%s','.*?['"]file['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
+item_info_build=%s
+
+item_info_name=rtmp
+item_info_from=pageUrl
+item_info_convert=getInfo('%s','.*?['"]streamer['"][:,]\s*['"]([^'"]+)['"].*','@REFERER@')
 item_info_build=%s
 
 item_info_name=url
