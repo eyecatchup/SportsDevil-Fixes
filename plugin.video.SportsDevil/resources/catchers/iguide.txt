@@ -24,17 +24,9 @@ item_info_build=%s
 
 item_info_name=file
 item_info_from=pageUrl
-<<<<<<< HEAD
 item_info_convert=getInfo('%s','.*?file['"][:,]\s*['"]([^.'"]+)','@REFERER@')
-=======
-item_info_convert=getInfo('%s','.*file[:,]\s*['"]([^.'"]+).*','@REFERER@')
->>>>>>> 62e40feceed2108b163694f55a037b53cb30cee8
 item_info_build=%s
 
 item_info_name=url
 item_info_from=rtmp + ' playpath=' + file + ' swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 token=' + token + ' timeout=15 swfVfy=1 pageUrl=' + pageUrl 
-<<<<<<< HEAD
 item_info_build=%s
-=======
-item_info_build=%s
->>>>>>> 62e40feceed2108b163694f55a037b53cb30cee8
