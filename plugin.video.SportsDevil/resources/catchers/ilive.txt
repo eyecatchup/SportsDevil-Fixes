@@ -29,4 +29,8 @@ item_info_build=%s
 
 item_info_name=url
 item_info_from=rtmp + ' playpath=' + file + ' swfUrl=http://player.ilive.to/player_ilive_embed.swf live=1 token=' + token + ' timeout=15 swfVfy=1 pageUrl=' + pageUrl
+<<<<<<< HEAD
 item_info_build=%s
+=======
+item_info_build=%s
+>>>>>>> 62e40feceed2108b163694f55a037b53cb30cee8

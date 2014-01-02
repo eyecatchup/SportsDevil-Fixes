@@ -12,5 +12,10 @@ item_info_convert=getInfo('%s','.*?stream=\s*['"]([^'"]+).*','@REFERER@')
 item_info_build=%s
 
 item_info_name=url
+<<<<<<< HEAD
 item_info_from=rtmpe://live.envivo.pw:1935/redirect playpath=' + file + ' swfUrl=http://p.jwpcdn.com/6/7/jwplayer.flash.swf live=1 timeout=15 token=OOG17t.x#K9Vh#| swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s
+=======
+item_info_from=rtmp://live.envivo.pw/redirect playpath=' + file + ' swfUrl=http://p.jwpcdn.com/6/7/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_build=%s
+>>>>>>> 62e40feceed2108b163694f55a037b53cb30cee8
