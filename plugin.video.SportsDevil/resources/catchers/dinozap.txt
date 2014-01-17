@@ -26,7 +26,7 @@ item_info_convert=debug
 item_info_build=%s
 
 item_info_name=url
-item_info_from=rtmp + ' playpath='+ file + ' swfUrl=http://thebestplayeronline.com/jwplayer5/addplayer/jwplayer.flash.swf live=true flashver=WIN\202011,9,900,117 token=#ro%g0#r@1 timeout=15 pageUrl=http://www.dinozap.tv 
+item_info_from=rtmp + ' playpath='+ file + ' swfUrl=http://thebestplayeronline.com/jwplayer5/addplayer/jwplayer.flash.swf live=true flashver=WIN\202011,9,900,117 token=@@stop-stole@@ timeout=15 pageUrl=http://www.dinozap.tv 
 item_info_build=%s
 
 ##ro%g0#r@1

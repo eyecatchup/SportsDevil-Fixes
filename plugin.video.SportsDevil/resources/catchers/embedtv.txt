@@ -9,7 +9,7 @@ item_info_build=EmbedTV - %s
 
 item_info_name=pageUrl
 item_info_from=tmp
-item_info_build=http://www.castup.tv/embed.php?channel=%s&vw=650&vh=460
+item_info_build=http://www.castup.me/embed.php?channel=%s&vw=650&vh=460
 
 item_info_name=tmp2
 item_info_from=pageUrl

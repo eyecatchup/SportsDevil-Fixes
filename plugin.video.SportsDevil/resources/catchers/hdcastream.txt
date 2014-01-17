@@ -39,4 +39,12 @@ item_info_build=%s
 
 item_info_name=url
 item_info_from=rtmp.tmp + ' playpath='+ file + ' swfUrl=http://thebestplayeronline.com/jwplayer5/addplayer/jwplayer.flash.swf live=true flashver=WIN%252011,8,800,168 token=@@stop-stole@@ timeout=15 pageUrl=http://www.hdcastream.com
+<<<<<<< HEAD
+<<<<<<< HEAD
 item_info_build=%s
+=======
+item_info_build=%s
+>>>>>>> 8cacf2c8e1724acb3ee53d7ef2870590c61d2007
+=======
+item_info_build=%s
+>>>>>>> 8cacf2c8e1724acb3ee53d7ef2870590c61d2007

@@ -4,7 +4,15 @@ item_info_build=SoccerJumboTV - %s
 
 item_info_name=tmp
 item_info_from=@PARAM1@
+<<<<<<< HEAD
+<<<<<<< HEAD
+item_info_convert=getInfo('http://up4free.com/streamn.php?id=000%s','.*?id='([^'"]+)'.*','@REFERER@')
+=======
 item_info_convert=getInfo('http://up4free.com/streamn.php?id=00%s','.*?id='([^'"]+)'.*','@REFERER@')
+>>>>>>> 8cacf2c8e1724acb3ee53d7ef2870590c61d2007
+=======
+item_info_convert=getInfo('http://up4free.com/streamn.php?id=00%s','.*?id='([^'"]+)'.*','@REFERER@')
+>>>>>>> 8cacf2c8e1724acb3ee53d7ef2870590c61d2007
 item_info_build=%s
 
 item_info_name=pageUrl
