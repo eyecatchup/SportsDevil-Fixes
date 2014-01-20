@@ -9,13 +9,13 @@ item_info_build=%s
 
 item_info_name=pageUrl
 item_info_from=tmp
-item_info_build= http://aljazeerasport.asia/stream.php?id=%s
+item_info_build=http://aljazeerasport.asia/stream.php?id=%s
 
 item_info_name=tmp2
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?file=([^&]+).*?streamer=([^&]+).*?src="([^"]+\.swf)".*','@REFERER@','file|rtmp|swf')
+item_info_convert=getInfo('%s','.*?file=([^&]+).*?streamer=([^&]+).*?src="([^"]+\.swf)".*','http://player.premier--streams.info','file|rtmp|swf')
 item_info_build=%s
 
 item_info_name=url
-item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' live=true timeout=15 swfVfy=true pageUrl=' + pageUrl
+item_info_from=rtmp://rtmp.aljazeerasport.asia:1935/liverepeater/ playpath=' + file + ' swfUrl=' + swf + ' live=true token=#n00bD155a110w# timeout=15 swfVfy=true pageUrl=' + pageUrl
 item_info_build=%s
