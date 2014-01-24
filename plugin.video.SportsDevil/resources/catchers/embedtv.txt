@@ -1,6 +1,6 @@
 item_info_name=tmp
 item_info_from=@PARAM1@
-item_info_convert=getInfo('http://www.castup.me/channel.php?id=%s','.*fid="([^"]+)','http://www.embed-tv.eu')
+item_info_convert=getInfo('http://www.castup.me/channel.php?id=%s','.*fid="([^"]+)','http://www.embed-ch.eu')
 item_info_build=%s
 
 item_info_name=title
