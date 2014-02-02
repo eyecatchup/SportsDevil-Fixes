@@ -4,9 +4,8 @@ item_info_build=Uvue - %s
 
 item_info_name=tmp
 item_info_from=http://uvue.de/' + @PARAM1@ + '.php?vw=640&vh=480
-item_info_convert=getInfo('%s','src="(.*?/frame.*?)"></iframe>.*','http://uvue.de')
-item_info_convert=getInfo('%s','window.location = "([^"]+).*','http://uvue.de')
-item_info_convert=getInfo('%s','fid="([^"]+).*','http://uvue.de')
+#item_info_convert=getInfo('http://uvue.de/frame1.html','window.location = "([^"]+).*','http://uvue.de/4042.php?vw=640&vh=480')
+item_info_convert=getInfo('%s','.*?fid="([^"]+).*','@REFERER@')
 item_info_build=%s
 
 item_info_name=pageUrl
@@ -15,7 +14,7 @@ item_info_build=http://static.castto.me/embedplayer.php?channel=%s&vw=640&vh=445
 
 item_info_name=tmp2
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*SWFObject\(\'([^\']+)\'.*?file\',\s*\'([^\']+)\'.*?streamer\',\s*\'([^\']+)\'.*','@REFERER@','swf|file|rtmp')
+item_info_convert=getInfo('%s','.*SWFObject\(\'([^\']+)\'.*?file\',\s*\'([^\']+)\'.*?streamer\',\s*\'([^\']+)\'.*','http://uvue.de','swf|file|rtmp')
 item_info_build=%s
 
 item_info_name=url
