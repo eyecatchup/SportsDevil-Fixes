@@ -22,5 +22,5 @@ item_info_convert=getInfo('%s','.*?SWFObject\(['"]([^'"]+)['"].*','@REFERER@')
 item_info_build=%s
 
 item_info_name=url
-item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmpe://strm.ukcast.tv/redirect playpath=' + file + ' swfUrl=' + swf + ' live=1 timeout=15 swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s

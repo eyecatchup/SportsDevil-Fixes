@@ -3,9 +3,9 @@ item_info_from=@PARAM1@
 item_info_build=Uvue - %s
 
 item_info_name=tmp
-item_info_from=http://uvue.de/' + @PARAM1@ + '.php?vw=640&vh=480
-#item_info_convert=getInfo('http://uvue.de/frame1.html','window.location = "([^"]+).*','http://uvue.de/4042.php?vw=640&vh=480')
-item_info_convert=getInfo('%s','.*?fid="([^"]+).*','@REFERER@')
+item_info_from=http://uvue.de/' + @PARAM1@ + '.php
+item_info_convert=getInfo('http://uvue.de/frame1.html','.*?window.location = "([^"]+)"\;\s*\}\s*else.*','%s')
+item_info_convert=getInfo('%s','.*?fid="([^"]+).*','http://uvue.de')
 item_info_build=%s
 
 item_info_name=pageUrl
