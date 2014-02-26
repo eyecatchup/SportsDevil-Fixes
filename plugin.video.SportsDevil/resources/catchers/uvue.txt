@@ -10,7 +10,7 @@ item_info_build=%s
 
 item_info_name=pageUrl
 item_info_from=tmp
-item_info_build=http://static.castto.me/embedplayer.php?channel=%s&vw=640&vh=445
+item_info_build=http://static.castto.me/embedplayer.php?channel=%s
 
 item_info_name=tmp2
 item_info_from=pageUrl
