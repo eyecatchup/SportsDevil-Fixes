@@ -240,14 +240,14 @@ class Main:
         # if it's the main menu, add folder 'Favourites' and 'Custom Modules
         if url == self.MAIN_MENU_FILE:
             tmp = ListItem.create()
-            tmp['title'] = 'Favourites'
+            tmp['title'] = '[COLOR red]Favourites[/COLOR]'
             tmp['type'] = 'rss'
             tmp['icon'] = os.path.join(common.Paths.imgDir, 'bookmark.png')
             tmp['url'] = str(common.Paths.favouritesFile)
             tmpList.items.insert(0, tmp)
             
             tmp = ListItem.create()
-            tmp['title'] = 'Custom Modules'
+            tmp['title'] = '[COLOR red]Custom Modules[/COLOR]'
             tmp['type'] = 'rss'
             tmp['url'] = os.path.join(common.Paths.customModulesDir, 'custom.cfg')
             tmpList.items.insert(0, tmp)
