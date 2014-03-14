@@ -4,11 +4,23 @@ item_info_name=title
 item_info_from=@PARAM1@
 item_info_build=SopCast - %s
 
+@IF(@PLATFORM@==Linux)@
+
 item_info_name=type
-@IF(@PLATFORM@==Linux)@item_info_build=command@ENDIF@
-@IF(@PLATFORM@!=Linux)@item_info_build=video@ENDIF@
+item_info_build=command
 
 item_info_name=url
 item_info_from=@PARAM1@
-@IF(@PLATFORM@==Linux)@item_info_build=RunPlugin("plugin://plugin.video.xsopcast/?sop=sop://broker.sopcast.com:3912/%s&mode=2&name=Sopcast&iconimage=special://home/addons/plugin.video.x-sopcast/icon.png")@ENDIF@
-@IF(@PLATFORM@!=Linux)@item_info_build=sop://broker.sopcast.com:3912/%s@ENDIF@
+item_info_build=RunPlugin("plugin://plugin.video.xsopcast/?sop=sop://broker.sopcast.com:3912/%s&mode=2&name=Sopcast&iconimage=special://home/addons/plugin.video.x-sopcast/icon.png")
+
+@ENDIF@
+
+@IF(@PLATFORM@!=Linux)@
+
+item_info_name=type
+item_info_build=command
+
+item_info_name=url
+item_info_from=@PARAM1@
+item_info_build=RunPlugin("plugin://plugin.video.p2p-streams/?url=sop://broker.sopcast.com:3912/%s&mode=2&name=Sopcast")
+@ENDIF@
