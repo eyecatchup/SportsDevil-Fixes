@@ -21,9 +21,15 @@ item_info_from=pageUrl
 item_info_convert=getInfo('%s','.*?flashplayer[:,]\s*['"]([^'"]+)['"].*','@REFERER@')
 item_info_build=%s
 
-item_info_name=file.tmp
+item_info_name=smil
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?file[:,]\s*['"]([^'"]+)['"].*','@REFERER@')
+item_info_convert=getInfo('%s','.*?file[:,]\s*['"]([^&'"]+).*','@REFERER@')
+item_info_convert=debug
+item_info_build=%s
+
+item_info_name=file
+item_info_from=pageUrl
+item_info_convert=getInfo('%s','.*?stream[:,]\s*['"]([^'"]+)['"].*','@REFERER@')
 item_info_build=%s
 
 item_info_name=ts
@@ -36,22 +42,18 @@ item_info_from=pageUrl
 item_info_convert=getInfo('%s','.*?sg[:,]\s*['"]([^'"]+)['"].*','@REFERER@')
 item_info_build=%s
 
-item_info_name=file.tmp2
-item_info_from=file.tmp
-item_info_convert=replace('%s','smil.php?id=','')
-item_info_build=%s
 
 item_info_name=rtmp
-item_info_from=file.tmp2
-item_info_convert=getInfo('http://www.zoomtv.me/smil.php?id=%s','.*?meta base="([^'"]+).*','http://www.zoomtv.me')
+item_info_from=http://www.zoomtv.me/' + smil + '&p=' + pid + '
+item_info_convert=getInfo('%s','.*?meta base="([^'"]+).*','http://www.zoomtv.me')
 item_info_build=%s
 
-item_info_name=file
-item_info_from=file.tmp2
-item_info_convert=getInfo('http://www.zoomtv.me/smil.php?id=%s','.*?video src="([^'"]+)"\s*title=.*','http://www.zoomtv.me')
-item_info_build=%s
+#item_info_name=file
+#item_info_from=http://www.zoomtv.me/' + smil + '&p=' + pid + '
+#item_info_convert=getInfo('http://www.zoomtv.me/%s','.*?video src="([^'"]+)"\s*system-bitrate="[^"]+"\s*/>\s*</switch>.*','http://www.zoomtv.me')
+#item_info_build=%s
 
 
 item_info_name=url
-item_info_from=rtmp://80.82.64.107:1935/zmtvliveme playpath=' + file + ' swfUrl=' + swf + ' conn=S:' + file + ' conn=S:' + ts + ' conn=S:' + sg + ' conn=S:V&gt;JWhui^@2ESdu0?}&gt;AN live=1 timeout=15 token=Q!lrB@G1)ww(-dQ4J4 swfVfy=1 pageUrl=' + pageUrl
+item_info_from=rtmp + ' playpath=' + file + ' swfUrl=' + swf + ' conn=S:' + file + ' conn=S:' + ts + ' conn=S:' + sg + ' conn=S:V&gt;JWhui^@2ESdu0?}&gt;AN live=1 timeout=15 token=Q!lrB@G1)ww(-dQ4J4 swfVfy=1 pageUrl=' + pageUrl
 item_info_build=%s
