@@ -1,6 +1,6 @@
 item_info_name=title
 item_info_from=@PARAM1@
-item_info_build=UKCast - %s
+item_info_build=UKCast2 - %s
 
 item_info_name=pageUrl
 item_info_from=@PARAM1@
@@ -18,7 +18,7 @@ item_info_build=%s
 
 
 item_info_name=url
-item_info_from=rtmpe://strm.ukcast.tv/redirect playpath=' + @PARAM1@ + ' swfUrl=' + swf + ' live=1 timeout=15 swfVfy=1 pageUrl=http://www.ukcast.tv
+item_info_from=rtmpe://188.0.226.130/redirect playpath=' + @PARAM1@ + ' swfUrl=' + swf + ' live=1 timeout=15 swfVfy=1 pageUrl=http://www.ukcast.tv
 item_info_build=%s
 
 #rtmpe://188.0.226.130/redirect
