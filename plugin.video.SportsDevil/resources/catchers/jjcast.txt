@@ -8,11 +8,13 @@ item_info_build=http://jjcast.com/player.php?stream=%s&width=640&height=385
 
 item_info_name=tmp
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*?j i=m l\(\)([^i]+)i.g.*','@REFERER@')
+item_info_convert=getInfo('%s','.*?j i=([^i]+)i.g.*','@REFERER@')
 item_info_build=%s
 
 item_info_name=file
 item_info_from=tmp
+item_info_convert=replace('%s','p q()','')
+item_info_convert=replace('%s','m l()','')
 item_info_convert=replace('%s',';h.g(\'','')
 item_info_convert=replace('%s','\')','')
 item_info_convert=replace('%s',';','')
