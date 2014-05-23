@@ -240,7 +240,7 @@ class Main:
         # if it's the main menu, add folder 'Favourites' and 'Custom Modules
         if url == self.MAIN_MENU_FILE:
             tmp = ListItem.create()
-            tmp['title'] = '[COLOR red]Favourites[/COLOR]'
+            tmp['title'] = 'Favourites'
             tmp['type'] = 'rss'
             tmp['icon'] = os.path.join(common.Paths.imgDir, 'bookmark.png')
             tmp['url'] = str(common.Paths.favouritesFile)
@@ -604,7 +604,7 @@ class Main:
         mode = int(self.addon.queries['mode'])
         queryString = self.addon.queries['item']
         item = ListItem.create()
-        item.infos = self.addon.parse_query(queryString,{})
+        item.infos = self.addon.parse_query(urllib.unquote(queryString),{})
         return [mode, item]
 
 
