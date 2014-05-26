@@ -604,7 +604,10 @@ class Main:
         mode = int(self.addon.queries['mode'])
         queryString = self.addon.queries['item']
         item = ListItem.create()
-        item.infos = self.addon.parse_query(urllib.unquote(queryString),{})
+	if mode in [Mode.ADDTOFAVOURITES, Mode.REMOVEFROMFAVOURITES, Mode.EDITITEM]:
+        	item.infos = self.addon.parse_query(urllib.unquote(queryString),{})
+	else:
+		item.infos = self.addon.parse_query(queryString,{})
         return [mode, item]
 
 
