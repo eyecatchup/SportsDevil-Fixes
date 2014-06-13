@@ -4,7 +4,7 @@ item_info_build=LshStream - %s
 
 item_info_name=pageUrl
 item_info_from=@PARAM1@
-item_info_build=http://lshstream.com/embed.php?u=%s
+item_info_build=http://cdn.lshstream.com/embed.php?u=%s
 
 item_info_name=tmp
 item_info_from=pageUrl
