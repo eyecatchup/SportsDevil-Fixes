@@ -1,3 +1,10 @@
+v 1.8.7.3 (10-Jul-14)
+------------------------------
+- Updated Cricket in Sports TV
+- Updated BlackTvLive.com in Live TV
+- Some minor catcher updates
+
+------------------------------
 v 1.8.7.2 (9-Jul-14)
 ------------------------------
 - New js functions work now(thanks to shani_08)
