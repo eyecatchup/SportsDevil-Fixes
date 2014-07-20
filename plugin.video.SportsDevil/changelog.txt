@@ -1,3 +1,17 @@
+v 1.8.7.5 (20-Jul-14)
+------------------------------
+- Added p.a.c.k.e.r function (thanks to shani_08)
+- Added javascript demystification function can now be called from cfg files (thanks to shani_08)
+- Added Streamago.tv to Live TV
+- Added iPhone.TV to Live TV
+- Updated p2p links (thanks to sattekop)
+- Updated Cricfree.tv new url
+- Fixed AtdheNet.tv
+- Fixed Strmh24.com
+- Fixed SportsHDFree.com
+- Some minor catcher updates
+
+------------------------------
 v 1.8.7.4 (10-Jul-14)
 ------------------------------
 - Some minor catcher updates
@@ -6,7 +20,7 @@ v 1.8.7.4 (10-Jul-14)
 v 1.8.7.3 (10-Jul-14)
 ------------------------------
 - Updated Cricket in Sports TV
-- Updated BlackTvLive.com in Live TV
+- Updated BlackTvLive.com in Live TV (Shini's zemtv addon is needed to play some links)
 - Some minor catcher updates
 
 ------------------------------
