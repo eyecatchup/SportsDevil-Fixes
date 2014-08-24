@@ -1,3 +1,10 @@
+v 1.8.7.7 (24-Aug-14)
+------------------------------
+- Added SoccerEmbed.com to Sports TV
+- Added U-Peak.me to Sports TV
+- Catchers update
+
+------------------------------
 v 1.8.7.6 (21-Aug-14)
 ------------------------------
 - Updated VipBox.tv
