@@ -165,9 +165,12 @@ def getInfo(item, params, src):
         variables = paramArr[3].strip("'").split('|')
     common.log('Get Info from: "'+ paramPage + '" from "' + referer + '"')
 
-    parts = (paramPage.split('|', 1) + [None] * 2)[:2]
-    paramPage, form_data = parts
-    form_data = urlparse.parse_qsl(form_data)
+    try:
+        parts = (paramPage.split('|', 1) + [None] * 2)[:2]
+        paramPage, form_data = parts
+        form_data = urlparse.parse_qsl(form_data)
+    except: 
+        pass
 
     data = common.getHTML(paramPage, form_data, referer, referer!='',demystify=True)
     return reg.parseText(data, paramRegex, variables)
